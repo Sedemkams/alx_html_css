@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #9ea1d4;
+    color: hsl(0, 0%, 0%);
+    background-image: url("imagebg.png");
+    background-size: contain;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    color: green;
+    background-color: bisque;
+    margin: 10px;
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+}
