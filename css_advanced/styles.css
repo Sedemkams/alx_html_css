@@ -89,7 +89,7 @@ header {
             box-sizing: border-box;
             max-width: fit-content;
         }
-    }
+    
     
     ul {
         display: flex;
@@ -109,5 +109,38 @@ header {
             }
         }
     }
+}
     
+}
+
+main, footer {
+
+    .flex-col,
+    .flex-row {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    span {
+        margin-inline: 1rem;
+    }
+
+    span.color-rose {
+        margin-inline: 0;
+    }
+
+    section {
+        padding: 0 4rem;
+        margin: 0;
+    }
+
+    div {
+        padding: 3rem 0rem;
+    }
 }
