@@ -1,3 +1,17 @@
+:root {
+    --radial-bg: radial-gradient(85.9% 85.9% at 50% 14.1%, rgb(41, 48, 61) 0%, var(--dark-blue) 100%);
+    --rose: #c271ff;
+    --white: #ffffff;
+    --black: #000000;
+    --grey: #979797;
+    --dark-blue: #071629;
+}
+
+html {
+    background-color: var(--black);
+    color: var(--white);
+}
+
 body,
 header,
 main,
@@ -8,6 +22,15 @@ section {
   max-width 100%;
 }
 
+body {
+    background: var(--radial-bg), url("C:\Users\hp\Documents\csspractice\css_advanced\Object.png");
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 h1,
 h2,
 h3,
@@ -16,6 +39,9 @@ p,
 button,
 a {
     font-family: "Source Sans Pro";
+    color: inherit;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 button {
@@ -25,6 +51,27 @@ button {
     box-shadow: var(--black) 0 2px 3px;
     cursor: pointer;
 
+}
+
+.bg-rose {
+    background-color: var(--rose);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.color-rose {
+    color: var(--rose);
+    font-weight: bold;
+}
+
+.color-grey {
+    color: var(--grey);
 }
 
 header {
