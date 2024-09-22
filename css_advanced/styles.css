@@ -18,12 +18,13 @@ main,
 footer,
 div,
 section {
+    font-family: "Source Sans Pro";
   box-sizing: border-box
   max-width 100%;
 }
 
 body {
-    background: var(--radial-bg), url("C:\Users\hp\Documents\csspractice\css_advanced\Object.png");
+    background: var(--radial-bg), url("Object.png");
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-position: bottom;
@@ -37,11 +38,14 @@ h3,
 blockquote,
 p,
 button,
-a {
+a,
+span {
     font-family: "Source Sans Pro";
     color: inherit;
     max-width: 100%;
     word-wrap: break-word;
+    text-align: center;
+    
 }
 
 button {
@@ -50,6 +54,7 @@ button {
     border-radius: 2em;
     box-shadow: var(--black) 0 2px 3px;
     cursor: pointer;
+    font-style: bold;
 
 }
 
@@ -142,5 +147,162 @@ main, footer {
 
     div {
         padding: 3rem 0rem;
+    }
+
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 120px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 100;
+        font-style: normal;
+        margin-top: 3rem;
+    }
+
+    .pros {
+        div {
+            margin-inline: 2rem;
+            >* {
+                margin: 1rem 0;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-style: italic;
+        }
+        >* {
+            flex: 1;
+        }
+    }
+
+    p {
+        font-size: 16 px;
+        line-height: 24px;
+    }
+
+    blockquote, h3 {
+        font-style: normal;
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    blockquote {
+        font-style: normal;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-weight: bold;
+    }
+
+    .quotes {
+        p {
+            font-style: italic;
+        }
+
+        div {
+            padding-inline: 2rem;
+        }
+        .flex-row {
+            flex: 1;
+            justify-content: flex-end;
+        }
+        .flex-col {
+            align-items: flex-start;
+            flex: 2;
+        }
+    }
+
+    .tutors {
+        .tutor-card {
+            max-width: 255px;
+            margin-inline: 2rem;
+            * {
+                padding-top: 0.2rem;
+                padding-bottom: 0.2rem;
+            }
+            >h3, .phillip, .ratings,
+            p {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+
+        .phillip {
+            justify-content: left;
+            >h4 {
+                margin-inline: 0.5rem;
+            }
+
+            img {
+                max-width: 30px;
+                max-height: 30px;
+            }
+        }
+
+        .star-icon {
+            max-width: 15px;
+            max-height: 15px;
+        }
+        .ratings {
+            justify-content: space-between0;
+        }
+        .play-button-top {
+            position: relative;
+            left: 96px;
+            top: -120px;
+            max-width: 64px;
+            max-height: 64px;
+            padding: 0;
+            margin-bottom: -64px; 
+        }
+    }
+    .membership {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        .flex-col {
+            width: 250px;
+            >* {
+                margin-block: 1rem;
+            }
+            p {
+                max-width: 200px;
+            }
+        }
+    }
+    .faq {
+        .flex-row {
+            >div {
+                width: 500px;
+                margin: 0 3rem 1rem 3rem;
+            }
+        }
+        p {
+            color: var(--grey);
+            padding-top: 1rem;
+        }
+    }
+
+    .footer {
+        padding-bottom: 2rem;
+        p {
+            color: var(--grey);
+        }
+        .flex-row {
+            justify-content: space-between;
+            width: 100%;
+        }
+        .socials>img {
+            margin-inline: 0.5rem;
+            width: 30px;
+        }
     }
 }
