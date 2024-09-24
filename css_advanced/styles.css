@@ -1,7 +1,7 @@
 :root {
-    --radial-bg: radial-gradient(85.9% 85.9% at 50% 14.1%, rgb(41, 48, 61) 0%, var(--dark-blue) 100%);
-    --rose: #c271ff;
-    --white: #ffffff;
+    --radial-bg: radial-gradient(85.9% 85.9% at 50% 14.1%, #fbfdf9 0%, var(--dark-blue) 100%);
+    --rose: #C271FF;
+    --white: #FFFFFF;
     --black: #000000;
     --grey: #979797;
     --dark-blue: #071629;
@@ -18,16 +18,15 @@ main,
 footer,
 div,
 section {
-    font-family: "Source Sans Pro";
-  box-sizing: border-box
-  max-width 100%;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 body {
     background: var(--radial-bg), url("Object.png");
     background-blend-mode: multiply;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -38,24 +37,20 @@ h3,
 blockquote,
 p,
 button,
-a,
-span {
-    font-family: "Source Sans Pro";
+a {
+    font-family: 'Source Sans Pro';
     color: inherit;
     max-width: 100%;
     word-wrap: break-word;
-    text-align: center;
-    
 }
 
 button {
+    font-family: 'Source Sans Pro';
     border: none;
     padding: 1em;
     border-radius: 2em;
     box-shadow: var(--black) 0 2px 3px;
     cursor: pointer;
-    font-style: bold;
-
 }
 
 .bg-rose {
@@ -64,6 +59,7 @@ button {
 
 .bg-white {
     background-color: var(--white);
+    color: var(--black);
 }
 
 .bg-dark-blue {
@@ -79,6 +75,7 @@ button {
     color: var(--grey);
 }
 
+/* HEADER CSS */
 header {
     padding: 2rem 3rem;
 
@@ -90,38 +87,40 @@ header {
         align-items: flex-start;
 
         >* {
-            flex:2;
+            flex: 2;
             box-sizing: border-box;
             max-width: fit-content;
         }
-    
-    
-    ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
 
-        li {
-            margin: 0 1rem;
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
 
-            a{
-                text-decoration: none;
-            }
+            li {
+                margin: 0 1rem;
 
-            a:visited,
-            a:active {
-                text-decoration: none;
+                a {
+                    text-decoration: none;
+                }
+
+                a:visited,
+                a:active {
+                    text-decoration: none;
+                }
             }
         }
     }
 }
-    
-}
 
+/* END HEADER'S CSS */
+
+/* MAIN AND FOOTER CSS */
 main, footer {
 
     .flex-col,
     .flex-row {
+        font-family: 'Source Sans Pro';
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
@@ -135,11 +134,9 @@ main, footer {
     span {
         margin-inline: 1rem;
     }
-
     span.color-rose {
         margin-inline: 0;
     }
-
     section {
         padding: 0 4rem;
         margin: 0;
@@ -184,7 +181,7 @@ main, footer {
     }
 
     p {
-        font-size: 16 px;
+        font-size: 16px;
         line-height: 24px;
     }
 
@@ -229,31 +226,28 @@ main, footer {
                 padding-top: 0.2rem;
                 padding-bottom: 0.2rem;
             }
-            >h3, .phillip, .ratings,
-            p {
+            >h3, .phillip, .ratings, p {
                 padding-left: 0.5em;
                 padding-right: 0.5em;
             }
         }
-
+        
         .phillip {
             justify-content: left;
             >h4 {
                 margin-inline: 0.5rem;
             }
-
             img {
                 max-width: 30px;
                 max-height: 30px;
             }
         }
-
         .star-icon {
             max-width: 15px;
             max-height: 15px;
         }
         .ratings {
-            justify-content: space-between0;
+            justify-content: space-between;
         }
         .play-button-top {
             position: relative;
@@ -262,7 +256,7 @@ main, footer {
             max-width: 64px;
             max-height: 64px;
             padding: 0;
-            margin-bottom: -64px; 
+            margin-bottom: -64px;
         }
     }
     .membership {
@@ -304,5 +298,11 @@ main, footer {
             margin-inline: 0.5rem;
             width: 30px;
         }
+
+        .copyr {
+            opacity: 35.17%;
+        }
     }
 }
+
+/* END OF MAIN AND FOOTER CSS*/
