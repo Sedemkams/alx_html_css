@@ -20,6 +20,16 @@ div,
 section {
     box-sizing: border-box;
     max-width: 100%;
+
+    .lst {
+        list-style: none;
+        font-weight: bold;
+    }
+
+    .types-of-smile {
+        font-weight: bold;
+    }
+   
 }
 
 body {
@@ -55,6 +65,7 @@ button {
 
 .bg-rose {
     background-color: var(--rose);
+    font-weight: bold;
 }
 
 .bg-white {
